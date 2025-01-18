@@ -110,7 +110,7 @@ const MovieDetails = () => {
 
           <h1 className="text-[2.8vh] sm:text-[1.9vw] font-[600]">Overview</h1>
 
-          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] w-[75%]">
+          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] w-[95%] sm:w-[75%]">
             {info.detail.overview}
           </p>
 
@@ -118,7 +118,7 @@ const MovieDetails = () => {
             Movie Translated
           </h1>
 
-          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] w-[75%]">
+          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] w-[95%] sm:w-[75%]">
             {info.translations.join(", ")} etc.
           </p>
 
