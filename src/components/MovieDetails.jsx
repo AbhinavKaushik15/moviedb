@@ -134,14 +134,14 @@ const MovieDetails = () => {
       <div className="w-full max-h-40 mt-[2vw] flex flex-col gap-[2vw]">
         {info.watchProviders && info.watchProviders.flatrate && (
           <div className="flex items-center">
-            <h1 className="mr-[2.9vw] text-zinc-300 text-[1.4vw]">
+            <h1 className="mr-[2.9vw] text-zinc-300 text-[2vh] sm:text-[1.4vw]">
               Available on Platform
             </h1>
             <div className="flex items-center gap-[2vw]">
               {info.watchProviders.flatrate.map((flat, i) => (
                 <img
                   key={i}
-                  className="w-[3.2vw] h-[3.2vw] rounded-md"
+                  className="w-[4vh] sm:w-[3.2vw] h-[4vh] sm:h-[3.2vw] rounded-sm sm:rounded-md"
                   src={`https://image.tmdb.org/t/p/w500/${flat.logo_path}`}
                   alt=""
                 />
@@ -152,14 +152,14 @@ const MovieDetails = () => {
 
         {info.watchProviders && info.watchProviders.rent && (
           <div className="flex items-center">
-            <h1 className="mr-[5vw] text-zinc-300 text-[1.4vw]">
+            <h1 className="mr-[5vw] text-zinc-300 text-[2vh] sm:text-[1.4vw]">
               Available on Rent
             </h1>
             <div className="flex items-center gap-[2vw]">
               {info.watchProviders.rent.map((rent, i) => (
                 <img
                   key={i}
-                  className="w-[3.2vw] h-[3.2vw] rounded-md"
+                  className="w-[4vh] sm:w-[3.2vw] h-[4vh] sm:h-[3.2vw] rounded-sm sm:rounded-md"
                   src={`https://image.tmdb.org/t/p/w500/${rent.logo_path}`}
                   alt=""
                 />
@@ -170,14 +170,14 @@ const MovieDetails = () => {
 
         {info.watchProviders && info.watchProviders.buy && (
           <div className="flex items-center">
-            <h1 className="mr-[5.7vw] text-zinc-300 text-[1.4vw]">
+            <h1 className="mr-[5.7vw] text-zinc-300 text-[2vh] sm:text-[1.4vw]">
               Available to Buy
             </h1>
             <div className="flex items-center gap-[2vw]">
               {info.watchProviders.buy.map((buy, i) => (
                 <img
                   key={i}
-                  className="w-[3.2vw] h-[3.2vw] rounded-md"
+                  className="w-[4vh] sm:w-[3.2vw] h-[4vh] sm:h-[3.2vw] rounded-sm sm:rounded-md"
                   src={`https://image.tmdb.org/t/p/w500/${buy.logo_path}`}
                   alt=""
                 />
