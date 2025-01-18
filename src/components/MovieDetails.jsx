@@ -40,24 +40,24 @@ const MovieDetails = () => {
       }}
       className="relative w-full min-h-[100vh] text-white px-[3.5vw]"
     >
-      <nav className="w-full h-14 flex items-center gap-[4vw] py-[3.5vw]">
+      <nav className="w-full h-14 flex items-center gap-[4.2vh] sm:gap-[4vw] py-[3.5vw]">
         <Link to="/" onClick={() => navigate(-1)}>
           <IoMdArrowRoundBack className="text-[4vh] sm:text-[2.35vw] hover:text-purple-400" />
         </Link>
         <a target="_blank" href={info.detail.homepage}>
-          <GoLinkExternal className="text-[3.7vw] sm:text-[1.7vw] hover:text-purple-400" />
+          <GoLinkExternal className="text-[3.45vh] sm:text-[1.7vw] hover:text-purple-400" />
         </a>
         <a
           target="_blank"
           href={`https://www.wikidata.org/wiki/${info.externalId.wikidata_id}`}
         >
-          <SiWikidata className="text-[5vw] sm:text-[2.5vw] hover:text-purple-400" />
+          <SiWikidata className="text-[4.9vh] sm:text-[2.5vw] hover:text-purple-400" />
         </a>
         <a
           target="_blank"
           href={`https://www.imdb.com/title/${info.externalId.imdb_id}/`}
         >
-          <FaImdb className="text-[4.2vw] sm:text-[2vw] text-yellow-400 hover:text-purple-400" />
+          <FaImdb className="text-[3.8vh] sm:text-[2vw] text-yellow-400 hover:text-purple-400" />
         </a>
       </nav>
 
