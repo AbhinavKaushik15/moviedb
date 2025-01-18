@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { asyncLoadMovie, removeMovie } from "../store/actions/movieAction";
+import { asyncLoadMovie, removeMovie } from "../store/actions/MovieAction";
 import {
   Link,
   Outlet,
