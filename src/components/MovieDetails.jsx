@@ -45,19 +45,19 @@ const MovieDetails = () => {
           <IoMdArrowRoundBack className="text-[4vh] sm:text-[2.35vw] hover:text-purple-400" />
         </Link>
         <a target="_blank" href={info.detail.homepage}>
-          <GoLinkExternal className="text-[3.45vh] sm:text-[1.7vw] hover:text-purple-400" />
+          <GoLinkExternal className="text-[3.2vh] sm:text-[1.7vw] hover:text-purple-400" />
         </a>
         <a
           target="_blank"
           href={`https://www.wikidata.org/wiki/${info.externalId.wikidata_id}`}
         >
-          <SiWikidata className="text-[4.9vh] sm:text-[2.5vw] hover:text-purple-400" />
+          <SiWikidata className="text-[4.7vh] sm:text-[2.5vw] hover:text-purple-400" />
         </a>
         <a
           target="_blank"
           href={`https://www.imdb.com/title/${info.externalId.imdb_id}/`}
         >
-          <FaImdb className="text-[3.8vh] sm:text-[2vw] text-yellow-400 hover:text-purple-400" />
+          <FaImdb className="text-[3.5vh] sm:text-[2vw] text-yellow-400 hover:text-purple-400" />
         </a>
       </nav>
 
