@@ -64,7 +64,7 @@ const MovieDetails = () => {
       <div className="hero_Section w-full flex-col sm:flex justify-between">
         {/* Hero Image */}
         <img
-          className="w-[40vh] sm:w-[20vw] h-[50vh] sm:h-[25vw] mt-2 sm:mt-0 object-cover rounded-md lg:rounded-xl"
+          className="w-[35vh] sm:w-[20vw] h-[45vh] sm:h-[25vw] mt-2 sm:mt-0 object-cover rounded-md lg:rounded-xl"
           src={`https://image.tmdb.org/t/p/original/${
             info.detail.poster_path || info.detail.backdrop_path
           }`}
@@ -72,7 +72,7 @@ const MovieDetails = () => {
         />
 
         {/* Hero Details */}
-        <div className="flex w-[60vw] flex-col gap-[0.9vw]">
+        <div className="flex w-[60vw] flex-col gap-[0.9vw] mt-4 sm:mt-0">
           <h1 className="text-[3vw] font-[800]">
             {info.detail.original_title}
             <sup className="text-[1.6vw] font-[500]">
