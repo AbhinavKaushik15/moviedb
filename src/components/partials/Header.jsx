@@ -19,7 +19,7 @@ const Header = ({ data }) => {
       <h1 className="text-white font-bold whitespace-nowrap text-[3.7vh] sm:text-[3.2vw] w-3/5">
         {data.title || data.original_title || data.name || data.original_name}
       </h1>
-      <p className="text-zinc-300 text-[2.1vh] sm:text-[1.4vw] leading-[1.2] w-[95%] sm:w-[45vw]">
+      <p className="text-zinc-300 text-[2vh] sm:text-[1.4vw] leading-[1.2] w-[95%] sm:w-[45vw]">
         {data.overview.slice(0, 180)}...
         <Link
           to={`${data.media_type}/details/${data.id}`}
