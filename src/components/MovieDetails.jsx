@@ -91,7 +91,7 @@ const MovieDetails = () => {
               </h1>
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               <div className="text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
                 {info.detail.release_date}
               </div>
@@ -190,7 +190,7 @@ const MovieDetails = () => {
       </div>
 
       <div className="mt-[2.2vw]">
-        <h1 className="text-[2.3vw] font-[700] mb-2">
+        <h1 className="text-[3vh] sm:text-[2.3vw] font-[700] mb-2">
           Recommendations & Similar Stuff
         </h1>
         <TrendingHorizontal
