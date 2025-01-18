@@ -28,7 +28,7 @@ select::-ms-expand {
   position: relative;
   display: flex;
   width: 24vh;
-  height: 6vh;
+  height: 5.6vh;
   line-height: 3;
   background: #27272a;
   overflow: hidden;
