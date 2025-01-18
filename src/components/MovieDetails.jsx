@@ -61,7 +61,7 @@ const MovieDetails = () => {
         </a>
       </nav>
 
-      <div className="hero_Section w-full flex-col sm:flex justify-between">
+      <div className="hero_Section w-full flex flex-col sm:flex-row justify-between">
         {/* Hero Image */}
         <img
           className="w-[26vh] sm:w-[20vw] h-[36vh] sm:h-[25vw] mt-2 sm:mt-0 object-cover rounded-md lg:rounded-xl"
@@ -72,7 +72,7 @@ const MovieDetails = () => {
         />
 
         {/* Hero Details */}
-        <div className="flex w-[60vw] flex-col gap-[0.9vw] mt-4 sm:mt-0">
+        <div className="flex sm:w-[60vw] flex-col gap-[0.9vw] mt-4 sm:mt-0">
           <h1 className="text-[4vh] whitespace-nowrap sm:text-[3vw] font-[800]">
             {info.detail.original_title}
             <sup className="text-[2vh] sm:text-[1.6vw] font-[500]">
@@ -110,7 +110,7 @@ const MovieDetails = () => {
 
           <h1 className="text-[2.8vh] sm:text-[1.9vw] font-[600]">Overview</h1>
 
-          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] sm:w-[75%]">
+          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] w-[75%]">
             {info.detail.overview}
           </p>
 
@@ -118,7 +118,7 @@ const MovieDetails = () => {
             Movie Translated
           </h1>
 
-          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] sm:w-[75%]">
+          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] w-[75%]">
             {info.translations.join(", ")} etc.
           </p>
 
