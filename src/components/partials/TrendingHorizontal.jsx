@@ -14,6 +14,17 @@ const TrendingHorizontal = ({ data }) => {
         modules={[Navigation]}
         navigation
         slidesPerView={5}
+        breakpoints={{
+          768: {
+            slidesPerView: 5,
+          },
+          480: {
+            slidesPerView: 3,
+          },
+          320: {
+            slidesPerView: 2,
+          },
+        }}
         className="py-5 w-full flex gap-3 overflow-hidden"
       >
         {data.length > 0 ? (
