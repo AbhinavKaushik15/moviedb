@@ -44,8 +44,8 @@ const Home = () => {
       <div className="absolute right-0 top-0 w-[100vw] sm:w-[81.45vw] min-h-full bg-[#1D1C23]">
         <Topnav />
         <Header data={wallpaper} />
-        <div className="w-full h-[7vh] flex items-center justify-between px-[1.15vw]">
-          <h1 className="text-[4vw] sm:text-[2vw] font-black py-1 text-white">
+        <div className="w-full h-[7vh] flex items-center justify-between px-[2.5vh] sm:px-[1.15vw]">
+          <h1 className="text-[4.5vh] sm:text-[2vw] font-black py-1 text-white">
             Trending
           </h1>
 

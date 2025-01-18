@@ -8,7 +8,7 @@ import noimage from "/noimage.jpg";
 
 const TrendingHorizontal = ({ data }) => {
   return (
-    <div className="relative w-full px-[1.3vw]">
+    <div className="relative w-full px-[2.7vh] sm:px-[1.3vw]">
       <Swiper
         spaceBetween={20}
         modules={[Navigation]}
@@ -37,7 +37,7 @@ const TrendingHorizontal = ({ data }) => {
                 <Link
                   to={`/${d.media_type}/details/${d.id}`}
                   key={i}
-                  className="box relative min-w-[16vw] h-[49vh] bg-purple-900"
+                  className="box relative min-w-[16vw] h-[89vh] bg-purple-900"
                 >
                   <img
                     className="w-full h-full object-cover"
