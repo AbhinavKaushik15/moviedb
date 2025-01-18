@@ -86,37 +86,45 @@ const MovieDetails = () => {
                 {(info.detail.vote_average * 10).toFixed()}
                 <sup className="text-[1.2vh] sm:text-[1vw]">%</sup>
               </h1>
-              <h1 className="text-[1.6vw] text-zinc-300">User Score</h1>
+              <h1 className="text-[2.3vh] sm:text-[1.6vw] text-zinc-300">
+                User Score
+              </h1>
             </div>
 
-            <div className="text-[1.2vw]">{info.detail.release_date}</div>
+            <div className="text-[1.6vh] sm:text-[1.2vw]">
+              {info.detail.release_date}
+            </div>
 
-            <h1 className="text-[1.3vw]">
+            <h1 className="text-[1.6vh] sm:text-[1.2vw]">
               {info.detail.genres.map((m) => m.name).join(", ")}
             </h1>
 
-            <h1 className="text-zinc-300 text-[1.3vw]">
+            <h1 className="text-zinc-300 text-[1.6vh] sm:text-[1.2vw]">
               ({info.detail.runtime} min)
             </h1>
           </div>
 
-          <h1 className="text-[1.6vw] italic text-zinc-300">
+          <h1 className="text-[2.2vh] sm:text-[1.6vw] italic text-zinc-300">
             {info.detail.tagline}
           </h1>
 
-          <h1 className="text-[1.9vw] font-[600]">Overview</h1>
+          <h1 className="text-[2.8vh] sm:text-[1.9vw] font-[600]">Overview</h1>
 
-          <p className="text-[1.2vw] w-[75%]">{info.detail.overview}</p>
+          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] sm:w-[75%]">
+            {info.detail.overview}
+          </p>
 
-          <h1 className="text-[1.9vw] font-[600]">Movie Translated</h1>
+          <h1 className="text-[2.8vh] sm:text-[1.9vw] font-[600]">
+            Movie Translated
+          </h1>
 
-          <p className="text-zinc-400 w-[75%] text-[1.2vw]">
+          <p className="text-zinc-400 text-[1.5vh] sm:text-[1.2vw] sm:w-[75%]">
             {info.translations.join(", ")} etc.
           </p>
 
           <Link
             to={`${pathname}/trailer`}
-            className="w-fit bg-purple-500 text-[1.3vw] hover:bg-white hover:text-purple-500 mt-[1vw] py-[0.7vw] px-[1.7vw] rounded-full font-[500]"
+            className="w-fit bg-purple-500 text-[1.6vh] sm:text-[1.3vw] hover:bg-white hover:text-purple-500 mt-2 sm:mt-[1vw] py-[1vh] sm:py-[0.7vw] px-[2vh] sm:px-[1.7vw] rounded-full font-[500]"
           >
             Play Trailer
           </Link>
