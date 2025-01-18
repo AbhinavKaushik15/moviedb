@@ -80,8 +80,8 @@ const MovieDetails = () => {
             </sup>
           </h1>
 
-          <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center gap-1 whitespace-nowrap">
+          <div className="flex flex-col sm:flex-row gap-1 sm:gap-3">
+            <div className="flex gap-1 whitespace-nowrap">
               <h1 className="w-[4vh] sm:w-[3.5vw] h-[4vh] sm:h-[3.5vw] bg-yellow-500 flex items-center justify-center rounded-full font-[500] text-white text-[1.6vh] sm:text-[1.3vw]">
                 {(info.detail.vote_average * 10).toFixed()}
                 <sup className="text-[1.2vh] sm:text-[1vw]">%</sup>
@@ -91,17 +91,19 @@ const MovieDetails = () => {
               </h1>
             </div>
 
-            <div className="text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
-              {info.detail.release_date}
+            <div className="flex">
+              <div className="text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
+                {info.detail.release_date}
+              </div>
+
+              <h1 className="text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
+                {info.detail.genres.map((m) => m.name).join(", ")}
+              </h1>
+
+              <h1 className="text-zinc-300 text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
+                ({info.detail.runtime} min)
+              </h1>
             </div>
-
-            <h1 className="text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
-              {info.detail.genres.map((m) => m.name).join(", ")}
-            </h1>
-
-            <h1 className="text-zinc-300 text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
-              ({info.detail.runtime} min)
-            </h1>
           </div>
 
           <h1 className="text-[2.2vh] sm:text-[1.6vw] italic text-zinc-300">
