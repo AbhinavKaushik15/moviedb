@@ -40,7 +40,7 @@ const MovieDetails = () => {
       }}
       className="relative w-full min-h-[100vh] text-white px-[3.5vw]"
     >
-      <nav className="w-full h-14 flex items-center gap-[4.2vh] sm:gap-[4vw] py-[5vh]">
+      <nav className="w-full h-14 flex items-center gap-[4.2vh] sm:gap-[4vw] py-[4vh]">
         <Link to="/" onClick={() => navigate(-1)}>
           <IoMdArrowRoundBack className="text-[4vh] sm:text-[2.35vw] hover:text-purple-400" />
         </Link>
