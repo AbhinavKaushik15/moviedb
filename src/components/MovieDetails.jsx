@@ -61,10 +61,10 @@ const MovieDetails = () => {
         </a>
       </nav>
 
-      <div className="hero_Section w-full flex justify-between">
+      <div className="hero_Section w-full flex-col sm:flex justify-between">
         {/* Hero Image */}
         <img
-          className="w-[31vw] sm:w-[20vw] h-[38vw] sm:h-[25vw] object-cover rounded-md lg:rounded-xl"
+          className="w-[40vw] sm:w-[20vw] h-[50vw] sm:h-[25vw] mt-2 sm:mt-0 object-cover rounded-md lg:rounded-xl"
           src={`https://image.tmdb.org/t/p/original/${
             info.detail.poster_path || info.detail.backdrop_path
           }`}
