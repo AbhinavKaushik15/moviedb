@@ -42,7 +42,7 @@ const MovieDetails = () => {
     >
       <nav className="w-full h-14 flex items-center gap-[4vw] py-[3.5vw]">
         <Link to="/" onClick={() => navigate(-1)}>
-          <IoMdArrowRoundBack className="text-[5vw] sm:text-[2.35vw] hover:text-purple-400" />
+          <IoMdArrowRoundBack className="text-[5vh] sm:text-[2.35vw] hover:text-purple-400" />
         </Link>
         <a target="_blank" href={info.detail.homepage}>
           <GoLinkExternal className="text-[3.7vw] sm:text-[1.7vw] hover:text-purple-400" />
