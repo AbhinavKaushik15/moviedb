@@ -190,7 +190,7 @@ const MovieDetails = () => {
       </div>
 
       <div className="mt-[2.2vw]">
-        <h1 className="text-[3vh] sm:text-[2.3vw] font-[700] mb-2">
+        <h1 className="text-[2.7vh] sm:text-[2.3vw] font-[700] mb-2">
           Recommendations & Similar Stuff
         </h1>
         <TrendingHorizontal
