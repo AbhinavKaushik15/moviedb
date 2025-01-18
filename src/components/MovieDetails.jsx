@@ -133,7 +133,7 @@ const MovieDetails = () => {
         </div>
       </div>
 
-      <div className="w-full max-h-40 mt-[2vw] flex flex-col gap-[2vw]">
+      <div className="w-full max-h-40 mt-[3vh] sm:mt-[2vw] flex flex-col gap-[2vw]">
         {info.watchProviders && info.watchProviders.flatrate && (
           <div className="flex items-center">
             <h1 className="mr-[2.9vw] text-zinc-300 text-[2vh] sm:text-[1.4vw]">
