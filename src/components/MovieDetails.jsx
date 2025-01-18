@@ -86,20 +86,20 @@ const MovieDetails = () => {
                 {(info.detail.vote_average * 10).toFixed()}
                 <sup className="text-[1.2vh] sm:text-[1vw]">%</sup>
               </h1>
-              <h1 className="text-[2.3vh] sm:text-[1.6vw] text-zinc-300">
+              <h1 className="text-[2.2vh] sm:text-[1.6vw] text-zinc-300">
                 User Score
               </h1>
             </div>
 
-            <div className="text-[1.6vh] whitespace-nowrap sm:text-[1.2vw]">
+            <div className="text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
               {info.detail.release_date}
             </div>
 
-            <h1 className="text-[1.6vh] whitespace-nowrap sm:text-[1.2vw]">
+            <h1 className="text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
               {info.detail.genres.map((m) => m.name).join(", ")}
             </h1>
 
-            <h1 className="text-zinc-300 text-[1.6vh] whitespace-nowrap sm:text-[1.2vw]">
+            <h1 className="text-zinc-300 text-[1.5vh] whitespace-nowrap sm:text-[1.2vw]">
               ({info.detail.runtime} min)
             </h1>
           </div>
