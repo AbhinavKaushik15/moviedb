@@ -51,13 +51,13 @@ const MovieDetails = () => {
           target="_blank"
           href={`https://www.wikidata.org/wiki/${info.externalId.wikidata_id}`}
         >
-          <SiWikidata className="text-[4.4vh] sm:text-[2.5vw] hover:text-purple-400" />
+          <SiWikidata className="text-[4.2vh] sm:text-[2.5vw] hover:text-purple-400" />
         </a>
         <a
           target="_blank"
           href={`https://www.imdb.com/title/${info.externalId.imdb_id}/`}
         >
-          <FaImdb className="text-[3.25vh] sm:text-[2vw] text-yellow-400 hover:text-purple-400" />
+          <FaImdb className="text-[3.15vh] sm:text-[2vw] text-yellow-400 hover:text-purple-400" />
         </a>
       </nav>
 
