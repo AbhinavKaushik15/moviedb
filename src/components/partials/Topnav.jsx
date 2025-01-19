@@ -26,7 +26,7 @@ const Topnav = () => {
     <div className="w-full">
       <div className="fixed w-full sm:w-[81.45vw] h-[9vh] sm:h-[15vh] flex items-center gap-[1.8vh] sm:gap-5">
         <div className="flex items-center justify-center mx-auto gap-1">
-          <FiSearch className="text-[3.8vh] sm:text-[2vw] text-zinc-400" />
+          <FiSearch className="text-[3vh] sm:text-[2vw] text-zinc-400" />
           <input
             onChange={(e) => setquery(e.target.value)}
             value={query}
