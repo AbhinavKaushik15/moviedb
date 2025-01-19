@@ -24,13 +24,13 @@ const Topnav = () => {
 
   return (
     <div className="w-full">
-      <div className="fixed w-full h-[15vh] flex items-center gap-5">
-        <FiSearch className="text-[2vw] ml-[15vw] text-zinc-400" />
-        <div className="flex">
+      <div className="fixed w-full sm:w-[81.45vw] h-[9vh] sm:h-[15vh] flex items-center gap-[1.8vh] sm:gap-5">
+        <div className="flex items-center justify-center mx-auto gap-1">
+          <FiSearch className="text-[3.8vh] sm:text-[2vw] text-zinc-400" />
           <input
             onChange={(e) => setquery(e.target.value)}
             value={query}
-            className="bg-transparent border-zinc-400 border-[0.5px] rounded-full outline-none py-[1vw] px-[2vw] w-[45vw] placeholder:text-zinc-400 text-white placeholder:text-[1.5vw]"
+            className="bg-transparent border-zinc-400 border-[0.5px] rounded-full outline-none py-[1vw] px-[2vw] w-[45vw] placeholder:text-zinc-400 text-white sm:placeholder:text-[1.5vw]"
             type="text"
             placeholder="Search..."
           />
@@ -60,14 +60,14 @@ const Topnav = () => {
               );
             })}
           </div>
-        </div>
 
-        {query.length > 0 && (
-          <IoCloseOutline
-            onClick={() => setquery("")}
-            className="text-[2.6vw] text-zinc-400"
-          />
-        )}
+          {query.length > 0 && (
+            <IoCloseOutline
+              onClick={() => setquery("")}
+              className="text-[5.5vh] sm:text-[2.6vw] text-zinc-400"
+            />
+          )}
+        </div>
       </div>
     </div>
   );
