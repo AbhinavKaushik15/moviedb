@@ -24,7 +24,7 @@ const Topnav = () => {
 
   return (
     <div className="w-full">
-      <div className="fixed w-full h-[15vh] hidden sm:flex items-center gap-5">
+      <div className="fixed w-full h-[15vh] flex items-center gap-5">
         <FiSearch className="text-[2vw] ml-[15vw] text-zinc-400" />
         <div className="flex">
           <input
