@@ -73,7 +73,7 @@ const MovieDetails = () => {
 
         {/* Hero Details */}
         <div className="flex sm:w-[60vw] flex-col gap-[0.9vw] mt-4 sm:mt-0">
-          <h1 className="text-[4vh] whitespace-nowrap sm:text-[3vw] font-[800]">
+          <h1 className="text-[4vh] sm:text-[3vw] font-[800]">
             {info.detail.original_title}
             <sup className="text-[2vh] sm:text-[1.6vw] font-[500]">
               ({info.detail.release_date.split("-")[0]})

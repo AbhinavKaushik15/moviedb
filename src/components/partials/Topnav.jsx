@@ -24,17 +24,17 @@ const Topnav = () => {
 
   return (
     <div className="w-full">
-      <div className="fixed w-full sm:w-[81.45vw] h-[9vh] sm:h-[15vh] flex items-center gap-[1.8vh] sm:gap-5">
-        <div className="flex items-center justify-center mx-auto gap-2">
-          <FiSearch className="text-[3.5vh] sm:text-[2vw] text-zinc-400" />
+      <div className="fixed w-full sm:w-[81.45vw] h-[9vh] sm:h-[13vh] flex items-center">
+        <div className="flex items-center justify-center gap-3 mx-auto">
+          <FiSearch className="text-[3.2vh] sm:text-[2.5vw] text-zinc-400" />
           <input
             onChange={(e) => setquery(e.target.value)}
             value={query}
-            className="bg-transparent border-zinc-400 border-[0.5px] rounded-full outline-none py-[1vh] sm:py-[1vw] px-[1.5vh] sm:px-[2vw] w-[45vh] sm:w-[45vw] placeholder:text-zinc-400 text-white sm:placeholder:text-[1.5vw]"
+            className="bg-transparent border-zinc-400 border-[0.5px] rounded-full outline-none py-[1vw] px-[2vw] w-[48vh] sm:w-[45vw] placeholder:text-zinc-400 text-white sm:placeholder:text-[1.5vw]"
             type="text"
             placeholder="Search..."
           />
-          <div className="absolute w-[45vh] sm:w-[45vw] max-h-60 top-[88%] sm:top-[80%] overflow-auto">
+          <div className="absolute w-[45vw] ml-[37px] sm:ml-[51px] max-h-60 top-[94%] sm:top-[86%] overflow-auto">
             {searches.map((s, i) => {
               return (
                 <Link
@@ -60,14 +60,14 @@ const Topnav = () => {
               );
             })}
           </div>
-
-          {query.length > 0 && (
-            <IoCloseOutline
-              onClick={() => setquery("")}
-              className="text-[6vh] sm:text-[2.6vw] text-zinc-400"
-            />
-          )}
         </div>
+
+        {query.length > 0 && (
+          <IoCloseOutline
+            onClick={() => setquery("")}
+            className="absolute hidden sm:flex sm:right-[13.5vw] text-[2.6vw] text-zinc-400"
+          />
+        )}
       </div>
     </div>
   );
