@@ -30,11 +30,11 @@ const Topnav = () => {
           <input
             onChange={(e) => setquery(e.target.value)}
             value={query}
-            className="bg-transparent border-zinc-400 border-[0.5px] rounded-full outline-none py-[1vh] sm:py-[1vw] px-[1.5vh] sm:px-[2vw] w-[70vh] sm:w-[45vw] placeholder:text-zinc-400 text-white sm:placeholder:text-[1.5vw]"
+            className="bg-transparent border-zinc-400 border-[0.5px] rounded-full outline-none py-[1vh] sm:py-[1vw] px-[1.5vh] sm:px-[2vw] w-[60vh] sm:w-[45vw] placeholder:text-zinc-400 text-white sm:placeholder:text-[1.5vw]"
             type="text"
             placeholder="Search..."
           />
-          <div className="absolute w-[45vw] max-h-60 top-[80%] overflow-auto">
+          <div className="absolute w-[60vh] sm:w-[45vw] max-h-60 top-[80%] overflow-auto">
             {searches.map((s, i) => {
               return (
                 <Link
