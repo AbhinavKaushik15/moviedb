@@ -26,7 +26,7 @@ const Topnav = () => {
     <div className="w-full">
       <div className="fixed w-full sm:w-[81.45vw] h-[9vh] sm:h-[13vh] flex items-center">
         <div className="flex items-center justify-center gap-3 mx-auto">
-          <FiSearch className="text-[3.2vh] sm:text-[2.5vw] text-zinc-400" />
+          <FiSearch className="text-[3vh] sm:text-[2.5vw] text-zinc-400" />
           <input
             onChange={(e) => setquery(e.target.value)}
             value={query}
@@ -34,7 +34,7 @@ const Topnav = () => {
             type="text"
             placeholder="Search..."
           />
-          <div className="absolute w-[45vw] ml-[37px] sm:ml-[51px] max-h-60 top-[94%] sm:top-[86%] overflow-auto">
+          <div className="absolute w-[38vh] sm:w-[45vw] ml-[37px] sm:ml-[51px] max-h-60 top-[86%] sm:top-[86%] overflow-auto">
             {searches.map((s, i) => {
               return (
                 <Link
