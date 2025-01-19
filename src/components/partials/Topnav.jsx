@@ -25,8 +25,8 @@ const Topnav = () => {
   return (
     <div className="w-full">
       <div className="fixed w-full sm:w-[81.45vw] h-[9vh] sm:h-[15vh] flex items-center gap-[1.8vh] sm:gap-5">
-        <div className="flex items-center justify-center mx-auto gap-1">
-          <FiSearch className="text-[3vh] sm:text-[2vw] text-zinc-400" />
+        <div className="flex items-center justify-center mx-auto gap-2">
+          <FiSearch className="text-[4.3vh] sm:text-[2vw] text-zinc-400" />
           <input
             onChange={(e) => setquery(e.target.value)}
             value={query}
@@ -34,7 +34,7 @@ const Topnav = () => {
             type="text"
             placeholder="Search..."
           />
-          <div className="absolute w-[60vh] sm:w-[45vw] max-h-60 top-[80%] overflow-auto">
+          <div className="absolute w-[60vh] sm:w-[45vw] max-h-60 top-[88%] sm:top-[80%] overflow-auto">
             {searches.map((s, i) => {
               return (
                 <Link
@@ -64,7 +64,7 @@ const Topnav = () => {
           {query.length > 0 && (
             <IoCloseOutline
               onClick={() => setquery("")}
-              className="text-[5.5vh] sm:text-[2.6vw] text-zinc-400"
+              className="ml-1 text-[6vh] sm:text-[2.6vw] text-zinc-400"
             />
           )}
         </div>
