@@ -16,7 +16,7 @@ const Header = ({ data }) => {
       }}
       className="w-full h-[55vh] sm:h-[65vh] p-10 flex flex-col justify-end gap-[2vh] sm:gap-[1vw]"
     >
-      <h1 className="text-white font-bold text-[3.7vh] sm:text-[3.2vw] w-3/5">
+      <h1 className="text-white font-bold leading-none text-[3.7vh] sm:text-[3.2vw] w-3/5">
         {data.title || data.original_title || data.name || data.original_name}
       </h1>
       <p className="text-zinc-300 text-[2vh] sm:text-[1.4vw] leading-[1.2] w-[95%] sm:w-[45vw]">
