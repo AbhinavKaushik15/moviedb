@@ -6,6 +6,7 @@ import axios from "../utils/axios";
 import TrendingHorizontal from "./partials/TrendingHorizontal";
 import Dropdown from "./partials/Dropdown";
 import Loading from "./Loading";
+import Menu from "./partials/Menu";
 
 const Home = () => {
   document.title = "MOVIEDB || Home Page";
@@ -40,6 +41,7 @@ const Home = () => {
 
   return wallpaper && trending ? (
     <div className="flex">
+      <Menu />
       <SideNav />
       <div className="absolute right-0 top-0 w-[100vw] sm:w-[81.45vw] min-h-full bg-[#1D1C23]">
         <Topnav />

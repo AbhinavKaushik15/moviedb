@@ -6,8 +6,6 @@ import { RiMovie2Line } from "react-icons/ri";
 import { BsStars } from "react-icons/bs";
 import { IoTvOutline } from "react-icons/io5";
 import { IoIosPeople } from "react-icons/io";
-import { RiInformationFill } from "react-icons/ri";
-import { MdCall } from "react-icons/md";
 
 function SideNav() {
   return (
@@ -54,20 +52,6 @@ function SideNav() {
           Person
         </Link>
       </nav>
-
-      {/* <hr className="border-none h-[0.7px] bg-white mt-4" />
-
-      <nav className="flex flex-col mt-6">
-        <h1 className="text-xl font-[600]">Website Information</h1>
-        <Link className="text-md mt-3 hover:bg-purple-600 transition-all w-52 flex items-center gap-1 py-2 pl-5 rounded-md">
-          <RiInformationFill />
-          About MOVIEDB
-        </Link>
-        <Link className="text-md hover:bg-purple-600 transition-all w-52 flex items-center gap-1 py-2 pl-5 rounded-md">
-          <MdCall />
-          Contact Us
-        </Link>
-      </nav> */}
     </div>
   );
 }

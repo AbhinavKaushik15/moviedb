@@ -4,10 +4,15 @@ import { FiSearch } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import noimage from "/noimage.jpg";
+import { IoIosMenu } from "react-icons/io";
+import { easeInOut, motion } from "motion/react";
+import { useContext } from "react";
+import { contextMenu } from "../../App";
 
 const Topnav = () => {
   const [query, setquery] = useState("");
   const [searches, setsearches] = useState([]);
+  const [isOpen, setisOpen] = useContext(contextMenu);
 
   const getSearches = async () => {
     try {
@@ -25,6 +30,23 @@ const Topnav = () => {
   return (
     <div className="w-full">
       <div className="fixed w-full sm:w-[81.45vw] h-[9vh] sm:h-[13vh] flex items-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, ease: easeInOut }}
+          className="fixed text-zinc-400 top-2 left-1 flex sm:hidden items-center"
+        >
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.9, duration: 1 }}
+            onClick={() => setisOpen(!isOpen)}
+            className="text-sm flex items-center"
+          >
+            <IoIosMenu className="text-[5.5vh] hover:rotate-90 transition-all" />
+          </motion.button>
+        </motion.div>
+
         <div className="flex items-center justify-center gap-3 mx-auto">
           <FiSearch className="text-[3vh] sm:text-[2.5vw] text-zinc-400" />
           <input

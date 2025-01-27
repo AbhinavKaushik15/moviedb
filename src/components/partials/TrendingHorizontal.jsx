@@ -32,7 +32,7 @@ const TrendingHorizontal = ({ data }) => {
             return (
               <SwiperSlide
                 key={i}
-                className="w-[25vw] rounded-md sm:rounded-xl overflow-hidden"
+                className="w-[25vw] rounded-md sm:rounded-lg overflow-hidden"
               >
                 <Link
                   to={`/${d.media_type}/details/${d.id}`}
