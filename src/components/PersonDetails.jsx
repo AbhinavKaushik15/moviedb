@@ -40,26 +40,26 @@ const PersonDetails = () => {
             target="_blank"
             href={`https://www.wikidata.org/wiki/${info.externalId.wikidata_id}`}
           >
-            <BiWorld className="text-[3.9vh] hover:text-purple-400" />
+            <BiWorld className="text-[3.6vh] hover:text-purple-400" />
           </a>
           <a
             target="_blank"
             href={`https://www.facebook.com/${info.externalId.facebook_id}`}
           >
-            <FaFacebook className="text-[3.5vh] hover:text-purple-400" />
+            <FaFacebook className="text-[3.45vh] hover:text-purple-400" />
           </a>
           <a
             target="_blank"
             href={`https://www.instagram.com/${info.externalId.instagram_id}/`}
           >
-            <BsInstagram className="text-[3.4vh] hover:text-purple-400" />
+            <BsInstagram className="text-[3.25vh] hover:text-purple-400" />
           </a>
 
           <a
             target="_blank"
             href={`https://www.x.com/${info.externalId.twitter_id}/`}
           >
-            <BsTwitterX className="text-[3.25vh] hover:text-purple-400" />
+            <BsTwitterX className="text-[3.1vh] hover:text-purple-400" />
           </a>
         </div>
       </nav>

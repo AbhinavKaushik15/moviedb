@@ -40,52 +40,52 @@ function Menu() {
         <div className="close flex sm:absolute sm:top-0 sm:right-0 text-white items-center justify-between">
           <button
             onClick={() => setisOpen(!isOpen)}
-            className="absolute text-sm right-0 flex items-center justify-center"
+            className="absolute text-lg right-0 flex items-center justify-center"
           >
             {isOpen === false ? "Menu" : "Close"}
             <IoCloseOutline
-              className={`text-2xl text-[#dadada] font-[100] ${
+              className={`text-3xl text-[#dadada] font-[100] ${
                 isOpen && "hover:rotate-90"
               } transition-all`}
             />
           </button>
         </div>
 
-        <nav className="flex flex-col mt-[5vw] text-white">
-          <h1 className="text-[5vw] font-[600] text-zinc-300">New Feeds</h1>
+        <nav className="flex flex-col mt-[14vw] text-white">
+          <h1 className="text-[6.5vw] font-[600] text-zinc-300">New Feeds</h1>
           <Link
             to="/trending"
-            className="text-[4vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
-            <FaFire className="text-[3vw] mr-[0.6vw]" />
+            <FaFire className="text-[4vw] mr-[0.6vw]" />
             Trending
           </Link>
           <Link
             to="/popular"
-            className="text-[4vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
-            <BsStars className="text-[3vw] mr-[0.6vw]" />
+            <BsStars className="text-[4vw] mr-[0.6vw]" />
             Popular
           </Link>
           <Link
             to="/movie"
-            className="text-[4vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
-            <RiMovie2Line className="text-[3vw] mr-[0.6vw]" />
+            <RiMovie2Line className="text-[4vw] mr-[0.6vw]" />
             Movies
           </Link>
           <Link
             to="/tv"
-            className="text-[4vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
-            <IoTvOutline className="text-[3vw] mr-[0.6vw]" />
+            <IoTvOutline className="text-[4vw] mr-[0.6vw]" />
             TV
           </Link>
           <Link
             to="/person"
-            className="text-[4vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
-            <IoIosPeople className="text-[3vw] mr-[0.6vw]" />
+            <IoIosPeople className="text-[4vw] mr-[0.6vw]" />
             Person
           </Link>
         </nav>
