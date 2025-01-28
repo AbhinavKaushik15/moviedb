@@ -59,7 +59,7 @@ const Trending = () => {
           <sub className="text-[1.6vh] xl:text-[1.1vw]">({category})</sub>
         </div>
 
-        <div className="flex gap-[4vw]">
+        <div className="hidden sm:flex gap-[4vw]">
           <Dropdown
             title="Category"
             options={["tv", "movie", "all"]}
