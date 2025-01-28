@@ -43,7 +43,7 @@ const Topnav = () => {
             onClick={() => setisOpen(!isOpen)}
             className="text-sm flex items-center"
           >
-            <IoIosMenu className="text-[5.5vh] hover:rotate-90 transition-all" />
+            <IoIosMenu className="text-[5vh] hover:rotate-90 transition-all" />
           </motion.button>
         </motion.div>
 
