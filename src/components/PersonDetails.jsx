@@ -143,13 +143,13 @@ const PersonDetails = () => {
           <h1 className="text-[4vh] sm:text-[3.5vw] text-white font-[700]">
             {info.detail.name}
           </h1>
-          <h1 className="text-[3.1vh] sm:text-[2.1vw] font-[500]">Biography</h1>
-          <p className="text-[2vh] sm:text-[1.25vw] w-[98%]">
+          <h1 className="text-[3vh] sm:text-[2.1vw] font-[500]">Biography</h1>
+          <p className="text-[1.8vh] sm:text-[1.25vw] w-[98%]">
             {info.detail.biography}
           </p>
 
           <div className="flex sm:hidden flex-col">
-            <h1 className="text-[3.2vh] sm:text-[2.4vw] mt-[2.2vw] font-[500]">
+            <h1 className="text-[3vh] sm:text-[2.4vw] mt-[2.2vw] font-[500]">
               Personal info
             </h1>
 
@@ -188,14 +188,14 @@ const PersonDetails = () => {
             </h1>
           </div>
 
-          <div>
+          <div className="mt-2">
             <h1 className="text-[3.2vh] sm:text-[2.1vw] text-zinc-500">
               Known For
             </h1>
             <TrendingHorizontal data={info.combinedCredits.crew} />
           </div>
 
-          <div className="w-full">
+          <div className="w-full mt-2">
             {info[category + "Credits"].cast ? (
               <div className="flex flex-col gap-[4vw] md:gap-[2vw]">
                 <div className="flex items-center justify-between">
