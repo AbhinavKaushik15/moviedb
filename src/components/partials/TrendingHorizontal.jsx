@@ -53,7 +53,7 @@ const TrendingHorizontal = ({ data }) => {
             );
           })
         ) : (
-          <h1 className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2  text-center text-[2.2vw] text-white whitespace-nowrap">
+          <h1 className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2  text-center text-[2vh] sm:text-[1.7vw] text-white whitespace-nowrap">
             Nothing to show.
           </h1>
         )}
