@@ -34,7 +34,7 @@ const Topnav = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, ease: easeInOut }}
-          className="fixed text-zinc-400 top-[2vh] left-1 flex sm:hidden items-center"
+          className="fixed text-zinc-400 top-[1.7vh] left-1 flex sm:hidden items-center"
         >
           <motion.button
             initial={{ opacity: 0 }}
