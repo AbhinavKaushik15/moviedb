@@ -34,7 +34,7 @@ function Menu() {
   return (
     <div
       ref={menuOpen}
-      className="fixed left-[-150%] z-[999] w-[50%] h-screen bg-[#0D0E13] mx-auto flex sm:hidden items-center justify-between py-5 sm:py-[3.5%] px-7 sm:px-[3.5%]"
+      className="fixed left-[-150%] z-[999] w-[52%] h-screen bg-[#0D0E13] mx-auto flex sm:hidden items-center justify-between py-5 sm:py-[3.5%] px-7 sm:px-[3.5%]"
     >
       <div className="right relative h-[91vh] w-full sm:w-[37.7vw]">
         <div className="close flex sm:absolute sm:top-0 sm:right-0 text-white items-center justify-between">
