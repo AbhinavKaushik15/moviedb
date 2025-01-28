@@ -10,7 +10,7 @@ const Card = ({ data, title }) => {
           <Link
             to={`/${c.media_type || title}/details/${c.id}`}
             key={i}
-            className="relative box w-[25vh] lg:w-[35vh] h-[35vh] lg:h-[49vh] mb-[7vh] md:mb-[4vh] flex flex-col mx-auto rounded-xl"
+            className="relative box w-[23vh] lg:w-[35vh] h-[35vh] lg:h-[49vh] mb-[7vh] md:mb-[4vh] flex flex-col mx-auto rounded-xl"
           >
             <img
               className="w-full h-full object-cover rounded-md md:rounded-xl"

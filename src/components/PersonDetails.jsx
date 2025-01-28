@@ -143,7 +143,7 @@ const PersonDetails = () => {
           <h1 className="text-[4vh] sm:text-[3.5vw] text-white font-[700]">
             {info.detail.name}
           </h1>
-          <h1 className="text-[3.2vh] sm:text-[2.1vw] font-[500]">Biography</h1>
+          <h1 className="text-[3.1vh] sm:text-[2.1vw] font-[500]">Biography</h1>
           <p className="text-[2vh] sm:text-[1.25vw] w-[98%]">
             {info.detail.biography}
           </p>
