@@ -188,14 +188,14 @@ const PersonDetails = () => {
             </h1>
           </div>
 
-          <div className="mt-2">
+          <div className="mt-2 sm:mt-0">
             <h1 className="text-[3.2vh] sm:text-[2.1vw] text-zinc-500">
               Known For
             </h1>
             <TrendingHorizontal data={info.combinedCredits.crew} />
           </div>
 
-          <div className="w-full mt-2">
+          <div className="w-full mt-2 sm:mt-0">
             {info[category + "Credits"].cast ? (
               <div className="flex flex-col gap-[4vw] md:gap-[2vw]">
                 <div className="flex items-center justify-between">

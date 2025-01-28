@@ -8,7 +8,7 @@ import noimage from "/noimage.jpg";
 
 const TrendingHorizontal = ({ data }) => {
   return (
-    <div className="relative w-full px-[2.7vh] sm:px-[1.3vw]">
+    <div className="relative w-full px-[0vh] sm:px-[1.3vw]">
       <Swiper
         spaceBetween={20}
         modules={[Navigation]}
