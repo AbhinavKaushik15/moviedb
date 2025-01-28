@@ -34,7 +34,7 @@ function Menu() {
   return (
     <div
       ref={menuOpen}
-      className="fixed left-[-150%] z-[999] w-full h-screen bg-[#0D0E13] mx-auto flex sm:hidden items-center justify-between py-5 sm:py-[3.5%] px-7 sm:px-[3.5%]"
+      className="fixed left-[-150%] z-[999] w-[50%] h-screen bg-[#0D0E13] mx-auto flex sm:hidden items-center justify-between py-5 sm:py-[3.5%] px-7 sm:px-[3.5%]"
     >
       <div className="right relative h-[91vh] w-full sm:w-[37.7vw]">
         <div className="close flex sm:absolute sm:top-0 sm:right-0 text-white items-center justify-between">
@@ -55,35 +55,35 @@ function Menu() {
           <h1 className="text-[6.5vw] font-[600] text-zinc-300">New Feeds</h1>
           <Link
             to="/trending"
-            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[35vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
             <FaFire className="text-[4vw] mr-[0.6vw]" />
             Trending
           </Link>
           <Link
             to="/popular"
-            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[35vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
             <BsStars className="text-[4vw] mr-[0.6vw]" />
             Popular
           </Link>
           <Link
             to="/movie"
-            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[35vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
             <RiMovie2Line className="text-[4vw] mr-[0.6vw]" />
             Movies
           </Link>
           <Link
             to="/tv"
-            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[35vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
             <IoTvOutline className="text-[4vw] mr-[0.6vw]" />
             TV
           </Link>
           <Link
             to="/person"
-            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[70vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
+            className="text-[5vw] mt-[2vw] hover:bg-purple-600 transition-all w-[35vw] flex items-center gap-1 py-2 pl-[1.33vw] rounded-md"
           >
             <IoIosPeople className="text-[4vw] mr-[0.6vw]" />
             Person
