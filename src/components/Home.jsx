@@ -57,7 +57,9 @@ const Home = () => {
             func={(e) => setcategory(e.target.value)}
           />
         </div>
-        <TrendingHorizontal data={trending} />
+        <div className="px-4">
+          <TrendingHorizontal data={trending} />
+        </div>
       </div>
     </div>
   ) : (
