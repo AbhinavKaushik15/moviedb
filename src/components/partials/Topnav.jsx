@@ -48,7 +48,7 @@ const Topnav = () => {
         </motion.div>
 
         <div className="flex items-center justify-center gap-3 mx-auto">
-          <FiSearch className="text-[3vh] sm:text-[2.5vw] text-zinc-400" />
+          <FiSearch className="hidden sm:flex text-[3vh] sm:text-[2.5vw] text-zinc-400" />
           <input
             onChange={(e) => setquery(e.target.value)}
             value={query}
