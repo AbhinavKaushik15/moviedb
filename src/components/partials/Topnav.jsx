@@ -75,7 +75,7 @@ const Topnav = () => {
                     }
                     alt=""
                   />
-                  <h1 className="text-md sm:text-[1.7vw]">
+                  <h1 className="text-md sm:text-[1.5vw]">
                     {s.title || s.original_title || s.name || s.original_name}
                   </h1>
                 </Link>
